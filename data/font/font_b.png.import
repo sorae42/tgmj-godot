@@ -1,0 +1,21 @@
+[remap]
+
+importer="font_data_image"
+type="FontFile"
+uid="uid://cpuyef7xbqf42"
+path="res://.godot/imported/font_b.png-087efb14aa5c484b740a14a62e7e8d38.fontdata"
+
+[deps]
+
+source_file="res://data/font/font_b.png"
+dest_files=["res://.godot/imported/font_b.png-087efb14aa5c484b740a14a62e7e8d38.fontdata"]
+
+[params]
+
+character_ranges=PackedStringArray("\'0\'", "\'1\'", "\'2\'", "\'3\'", "\'4\'", "\'5\'", "\'6\'", "\'7\'", "\'8\'", "\'9\'", "\':\'")
+columns=11
+rows=1
+image_margin=Rect2i(0, 0, 0, 0)
+character_margin=Rect2i(0, 0, 0, 0)
+fallbacks=[]
+compress=true
