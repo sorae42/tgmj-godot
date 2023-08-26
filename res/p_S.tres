@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://bbjm56xswwq1h"]
+
+[ext_resource type="Texture2D" uid="uid://cqusl58iyic1v" path="res://data/texture/block/block_7.png" id="1_m7is2"]
+[ext_resource type="Script" path="res://script/piecedata.gd" id="2_u1614"]
+
+[resource]
+script = ExtResource("2_u1614")
+piece_texture = ExtResource("1_m7is2")
+block_type = 4
+spawn_pos_x = 5

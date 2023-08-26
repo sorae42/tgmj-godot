@@ -1,0 +1,325 @@
+[gd_scene load_steps=56 format=3 uid="uid://1nb014c52tix"]
+
+[ext_resource type="Texture2D" uid="uid://b73sfqyohw7mx" path="res://data/bg/1.png" id="1_3jdh2"]
+[ext_resource type="Script" path="res://script/game.gd" id="1_hhkql"]
+[ext_resource type="Texture2D" uid="uid://drbrs3q5nle24" path="res://data/bg/2.png" id="2_8v4iv"]
+[ext_resource type="Texture2D" uid="uid://bermvl8khtuvj" path="res://data/bg/3.png" id="3_6wwd0"]
+[ext_resource type="Texture2D" uid="uid://cefs5uek2jlix" path="res://data/bg/4.png" id="4_te3ei"]
+[ext_resource type="Texture2D" uid="uid://b4fgwsqscu2m0" path="res://data/bg/5.png" id="5_g7m86"]
+[ext_resource type="Texture2D" uid="uid://be3bls3fg4feo" path="res://data/bg/6.png" id="6_ro0fc"]
+[ext_resource type="Texture2D" uid="uid://cchop0vskag4v" path="res://data/bg/7.png" id="7_1j6ib"]
+[ext_resource type="Texture2D" uid="uid://0nfb0g0l1l81" path="res://data/bg/8.png" id="8_e0cwu"]
+[ext_resource type="Texture2D" uid="uid://djt3f8nc4s77l" path="res://data/bg/9.png" id="9_u36dh"]
+[ext_resource type="Texture2D" uid="uid://8cw5yjr0220b" path="res://data/bg/10.png" id="10_nxdp1"]
+[ext_resource type="Texture2D" uid="uid://bd0x6d7n7lup4" path="res://data/texture/playfield.png" id="13_n6uuy"]
+[ext_resource type="Script" path="res://script/board.gd" id="14_urtqo"]
+[ext_resource type="Texture2D" uid="uid://c4tlfn2cbrx8o" path="res://data/texture/points.png" id="14_yorc6"]
+[ext_resource type="Texture2D" uid="uid://u7flgyfwo80b" path="res://data/texture/next.png" id="15_redat"]
+[ext_resource type="PackedScene" uid="uid://c273udqmrl8bb" path="res://screen/pieces.tscn" id="15_u6vm6"]
+[ext_resource type="AudioStream" uid="uid://cnd1njsm6luge" path="res://data/music/a.ogg" id="16_8vvwu"]
+[ext_resource type="Shader" path="res://shader/grayscale.gdshader" id="16_x8gli"]
+[ext_resource type="Texture2D" uid="uid://dqpxj8utqpkeh" path="res://data/texture/grades/9.png" id="17_cbdrg"]
+[ext_resource type="Texture2D" uid="uid://bfejj0pmxb2ss" path="res://data/texture/nextgrade.png" id="17_y71l2"]
+[ext_resource type="Texture2D" uid="uid://cvje15blyw2we" path="res://data/texture/grades/8.png" id="18_8oqpp"]
+[ext_resource type="Texture2D" uid="uid://caml747m84sdw" path="res://data/texture/grades/7.png" id="19_biepc"]
+[ext_resource type="Texture2D" uid="uid://cplkekf665fsb" path="res://data/texture/grades/6.png" id="20_r7lir"]
+[ext_resource type="Texture2D" uid="uid://3mgac3om0ifv" path="res://data/texture/grades/5.png" id="21_sjrin"]
+[ext_resource type="Texture2D" uid="uid://hcfod7pkgdaf" path="res://data/texture/ready.png" id="22_nni5j"]
+[ext_resource type="Texture2D" uid="uid://balb8hy7oykli" path="res://data/texture/grades/4.png" id="22_wvsqa"]
+[ext_resource type="Texture2D" uid="uid://ca0hfreq5llx4" path="res://data/texture/go.png" id="23_don2f"]
+[ext_resource type="Texture2D" uid="uid://dra80pxq6ics8" path="res://data/texture/grades/3.png" id="23_ixct5"]
+[ext_resource type="Texture2D" uid="uid://c0xho8viabqjr" path="res://data/texture/grades/2.png" id="24_a0s2t"]
+[ext_resource type="Texture2D" uid="uid://btxwr63j7252r" path="res://data/texture/grades/1.png" id="25_mxbox"]
+[ext_resource type="Texture2D" uid="uid://dooaid03w8vx0" path="res://data/texture/grades/s1.png" id="26_8cxul"]
+[ext_resource type="Texture2D" uid="uid://dkuii014sprdh" path="res://data/texture/grades/s2.png" id="27_np4dj"]
+[ext_resource type="Texture2D" uid="uid://rgko0qnhvku5" path="res://data/texture/grades/s3.png" id="28_x0qf2"]
+[ext_resource type="Texture2D" uid="uid://6qbj3jqg3g4w" path="res://data/texture/grades/s4.png" id="29_0vbvk"]
+[ext_resource type="Texture2D" uid="uid://ie7tbp6a4grr" path="res://data/texture/grades/s5.png" id="30_3gqq3"]
+[ext_resource type="Texture2D" uid="uid://cw5v8e4yt08w7" path="res://data/texture/grades/s6.png" id="31_y6ak6"]
+[ext_resource type="Texture2D" uid="uid://cu7qhqrxd7te6" path="res://data/texture/grades/s7.png" id="32_jx17f"]
+[ext_resource type="Texture2D" uid="uid://ci6b6fd6hscnt" path="res://data/texture/grades/s8.png" id="33_okgqc"]
+[ext_resource type="Texture2D" uid="uid://b81vquiptxjwj" path="res://data/texture/grades/s9.png" id="34_nregf"]
+[ext_resource type="Texture2D" uid="uid://daxc2r4ef83e8" path="res://data/texture/grades/gm.png" id="35_brh6d"]
+[ext_resource type="Texture2D" uid="uid://cthdbrytpuusx" path="res://data/texture/level.png" id="38_egt8p"]
+[ext_resource type="FontFile" uid="uid://cpuyef7xbqf42" path="res://data/font/font_b.png" id="39_h3cv3"]
+[ext_resource type="Script" path="res://script/time.gd" id="40_o0v51"]
+[ext_resource type="FontFile" uid="uid://dpx3wlcah2ung" path="res://data/font/font_s.png" id="41_47in6"]
+[ext_resource type="Script" path="res://script/spawner.gd" id="42_55jk2"]
+[ext_resource type="Texture2D" uid="uid://bp2awfg4jlrg" path="res://data/texture/black.png" id="42_s5r5y"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6yy2v"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_3jdh2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_8v4iv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_6wwd0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_te3ei")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_g7m86")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ro0fc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_1j6ib")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_e0cwu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_u36dh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_nxdp1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_s4e5o"]
+shader = ExtResource("16_x8gli")
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kyi0d"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_cbdrg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_8oqpp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_biepc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_r7lir")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_sjrin")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_wvsqa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_ixct5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_a0s2t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_mxbox")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_8cxul")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_np4dj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_x0qf2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_0vbvk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_3gqq3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_y6ak6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_jx17f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_okgqc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_nregf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_brh6d")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="LabelSettings" id="LabelSettings_1t4c4"]
+line_spacing = 2.08165e-12
+font = ExtResource("41_47in6")
+font_size = 12
+
+[sub_resource type="LabelSettings" id="LabelSettings_vtju6"]
+line_spacing = 2.08165e-12
+font = ExtResource("41_47in6")
+
+[sub_resource type="LabelSettings" id="LabelSettings_cuudq"]
+line_spacing = 2.08165e-12
+font = ExtResource("41_47in6")
+
+[sub_resource type="LabelSettings" id="LabelSettings_trc2l"]
+line_spacing = 2.08165e-12
+font = ExtResource("41_47in6")
+
+[sub_resource type="LabelSettings" id="LabelSettings_f1xtu"]
+font = ExtResource("39_h3cv3")
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ubrq5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("22_nni5j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_don2f")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="game" type="Node"]
+script = ExtResource("1_hhkql")
+
+[node name="background" type="AnimatedSprite2D" parent="."]
+position = Vector2(160, 120)
+sprite_frames = SubResource("SpriteFrames_6yy2v")
+speed_scale = 2.08165e-12
+metadata/_edit_lock_ = true
+
+[node name="gui" type="Node2D" parent="."]
+material = SubResource("ShaderMaterial_s4e5o")
+
+[node name="grades" type="AnimatedSprite2D" parent="gui"]
+position = Vector2(97, 44)
+sprite_frames = SubResource("SpriteFrames_kyi0d")
+speed_scale = 2.08165e-12
+
+[node name="Next" type="Sprite2D" parent="gui"]
+use_parent_material = true
+position = Vector2(123, 26)
+texture = ExtResource("15_redat")
+
+[node name="Nextgrade" type="Sprite2D" parent="gui"]
+use_parent_material = true
+position = Vector2(90, 66)
+texture = ExtResource("17_y71l2")
+
+[node name="point_to_next_grade" type="Label" parent="gui"]
+use_parent_material = true
+offset_left = 53.0
+offset_top = 76.0
+offset_right = 111.0
+offset_bottom = 85.0
+text = "??????"
+label_settings = SubResource("LabelSettings_1t4c4")
+horizontal_alignment = 2
+vertical_alignment = 1
+clip_text = true
+text_overrun_behavior = 1
+
+[node name="Points" type="Sprite2D" parent="gui"]
+use_parent_material = true
+position = Vector2(98, 92)
+texture = ExtResource("14_yorc6")
+
+[node name="Points_b" type="Sprite2D" parent="gui"]
+use_parent_material = true
+position = Vector2(98, 126)
+texture = ExtResource("14_yorc6")
+
+[node name="current_point" type="Label" parent="gui"]
+use_parent_material = true
+offset_left = 40.0
+offset_top = 133.0
+offset_right = 110.0
+offset_bottom = 142.0
+text = "??????"
+label_settings = SubResource("LabelSettings_vtju6")
+horizontal_alignment = 2
+vertical_alignment = 1
+text_overrun_behavior = 1
+
+[node name="Level" type="Sprite2D" parent="gui"]
+use_parent_material = true
+position = Vector2(100, 170)
+texture = ExtResource("38_egt8p")
+
+[node name="level" type="Label" parent="gui"]
+use_parent_material = true
+offset_left = 70.0
+offset_top = 180.0
+offset_right = 111.0
+offset_bottom = 189.0
+text = "????"
+label_settings = SubResource("LabelSettings_cuudq")
+horizontal_alignment = 2
+text_overrun_behavior = 1
+
+[node name="section" type="Label" parent="gui"]
+use_parent_material = true
+offset_left = 70.0
+offset_top = 195.0
+offset_right = 111.0
+offset_bottom = 204.0
+text = "????"
+label_settings = SubResource("LabelSettings_trc2l")
+horizontal_alignment = 2
+vertical_alignment = 1
+text_overrun_behavior = 1
+
+[node name="time" type="Label" parent="gui"]
+use_parent_material = true
+offset_left = 114.0
+offset_top = 205.0
+offset_right = 206.0
+offset_bottom = 234.0
+text = "00:00:00"
+label_settings = SubResource("LabelSettings_f1xtu")
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("40_o0v51")
+
+[node name="Playfield" type="Sprite2D" parent="."]
+position = Vector2(160, 118)
+scale = Vector2(0.93, 0.91)
+texture = ExtResource("13_n6uuy")
+metadata/_edit_lock_ = true
+
+[node name="spawner" type="Node" parent="Playfield"]
+script = ExtResource("42_55jk2")
+
+[node name="board" type="Node" parent="Playfield"]
+script = ExtResource("14_urtqo")
+scn_piece = ExtResource("15_u6vm6")
+
+[node name="sound" type="Node" parent="."]
+
+[node name="ready_go" type="AudioStreamPlayer" parent="sound"]
+
+[node name="bgm" type="AudioStreamPlayer" parent="sound"]
+stream = ExtResource("16_8vvwu")
+
+[node name="piece_spawn" type="AudioStreamPlayer" parent="sound"]
+
+[node name="announcer_ready" type="AnimatedSprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(160, 123.5)
+scale = Vector2(0.999999, 0.999999)
+sprite_frames = SubResource("SpriteFrames_ubrq5")
+speed_scale = 2.08165e-12
+
+[node name="BlackOverlay" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(160, 120)
+texture = ExtResource("42_s5r5y")
+metadata/_edit_lock_ = true

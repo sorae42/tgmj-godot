@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://b4fojn7sd2rtt"]
+
+[ext_resource type="Texture2D" uid="uid://nko86scqldxl" path="res://data/texture/block/block_3.png" id="1_olume"]
+[ext_resource type="Script" path="res://script/piecedata.gd" id="2_fajxp"]
+
+[resource]
+script = ExtResource("2_fajxp")
+piece_texture = ExtResource("1_olume")
+block_type = 3
+spawn_pos_x = 5

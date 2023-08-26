@@ -1,0 +1,27 @@
+[gd_scene load_steps=6 format=3 uid="uid://bf4625rn05p10"]
+
+[ext_resource type="Script" path="res://script/title.gd" id="1_1ytnq"]
+[ext_resource type="Texture2D" uid="uid://dln3ncfu8t1er" path="res://data/texture/title1.png" id="1_j3ojg"]
+[ext_resource type="Texture2D" uid="uid://c4n128e5mu3a8" path="res://data/texture/titleaction.png" id="2_4p6ey"]
+[ext_resource type="Script" path="res://script/Titleaction.gd" id="3_ycba4"]
+[ext_resource type="Texture2D" uid="uid://bp2awfg4jlrg" path="res://data/texture/black.png" id="5_lwdo4"]
+
+[node name="title" type="Node"]
+script = ExtResource("1_1ytnq")
+
+[node name="Title1" type="Sprite2D" parent="."]
+position = Vector2(160, 120)
+texture = ExtResource("1_j3ojg")
+
+[node name="Black" type="Sprite2D" parent="."]
+position = Vector2(160, 120)
+texture = ExtResource("5_lwdo4")
+
+[node name="Titleaction" type="Sprite2D" parent="."]
+position = Vector2(160, 174)
+texture = ExtResource("2_4p6ey")
+script = ExtResource("3_ycba4")
+
+[node name="BlackOverlay" type="Sprite2D" parent="."]
+position = Vector2(160, 120)
+texture = ExtResource("5_lwdo4")
